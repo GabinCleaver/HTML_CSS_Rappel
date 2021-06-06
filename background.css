@@ -1,0 +1,33 @@
+/* Pour faire des background en dégradé:
+
+Linéaire:
+
+background: linear-gradient(blue, red)
+background: -webkit-linear-gradient(blue, red)
+background: -moz-linear-gradient(blue, red)
+background: -ms-linear-gradient(blue, red)
+background: -o-linear-gradient(blue, red)
+
+Radial:
+
+Inutile mais:
+
+background: radial-gradient(bleu, red)
+
+Direction:
+    Pour droite: background: linear-gradient(to right, blue, red)
+    Pour gauche: background: linear-gradient(to left, blue, red)
+    Pour en haut: background: linear-gradient(to top, blue, red)
+    Pour en bas: background: linear-gradient(to bottom, blue, red)
+    En haut a gauche: background: linear-gradient(to bottom right, blue, red)
+    Avec les degres (Toujours deg): background: linear-gradient(90deg, blue, red)
+
+*/
+
+
+body{
+    background-image: url(assets/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center -1000px;
+    background-attachment: fixed;
+}

@@ -1,0 +1,57 @@
+<!-- Pour insérer une image il vous suffit d'insérer l'élement img dans une balise comme p
+
+Pour que l'élement img fonctionne, il faut que les deux attributs src et alt soit présent.
+
+On peut également utiliser l'attribut title afin d'afficher du texte au passage de la souris sur l'image.
+
+    <img src="assets/logo.png" alt="Logo" title="Logo">
+
+    src : d'ou vient l'image le chemin d'accès
+    alt = la description qui s'affiche si l'image est pas chargée
+    title = ce qui s'affiche quand on passe la souris.
+-->
+
+<!-- Pour l'audio 
+
+On va utiliser l'élement audio. Aavec comment attribut obligatoir: src et controls
+Exemple : <audio src="assets/HAINE & SEX.mp3" controls preload="auto"></audio>
+
+Et facultatif:
+
+- Autoplay : Lecture auto;
+- Loop : L'audio ce répète;
+- Width : Modifie la largeur de la barre de lecture (Utilisiation: width="100");
+- Preload : sauvagarde la bande passante :
+    Valeurs: metadata, auto, none. (auto = best)
+
+    Pour les vidéos:
+
+On va utiliser l'élement video. Aavec comment attribut obligatoir: src et controls
+
+Et facultatif:
+
+- Poster: Mettre une
+- Autoplay : Lecture auto;
+- Loop : L'audio ce répète;
+- Width : Modifie la largeur de la barre de lecture;
+- Preload : sauvagarde la bande passante :
+    Valeurs: metadata, auto, none. (auto = best)
+
+    <video src="assets/Ninho.mp4" controls preload="auto"></video>
+
+    Mais on peut aussi aller dans youtube et faire partager -> intégrer et copier coller.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Gabin WebSite</title>
+        <link rel="stylesheet" href="visuel.css"/>
+    </head>
+    <body>
+        <figure>
+            <video src="assets/music.mp3" controls preload="auto"></video>
+        </figure>
+    </body>
+</html>

@@ -1,0 +1,102 @@
+/* 
+
+color = La couleur textuelle.
+font-size = La taille d'un texte.
+font-style = Définir l'inclinaison d'un texte.
+font-weight = Définir le poid d'un texte.
+font-family = Définir la police du texte
+line-height = La distance entre les lignes d'un texte
+opacity = Changer l'opacité du texte entre 0 transparent et 1 visible.
+text-align = Alligner un texte.
+text-decoration = Decorer son texte.
+text-indent = Indenter son texte.
+text-transform = Changer l'aspect des caractères d'un texte.
+text-shadow = Ajouter des ombres a un texte.
+letter-spacing = Définir l'espace entre les lettres des caractères d'un texte.
+world-spacing = Définir l'espace entre les mots des caractères d'un texte.
+padding = Marge intérieur
+margin = Marge exterieur
+width = Largeur
+height = Hauteur
+border-width = L'épaisseur de la bordure.
+border-bottom-width / border-top-width / border-right-width / border-left-width = Faire une bordure sur un coté précis.
+border-style = Pour décorer la bordure.
+border-bottom-style / border-top-style / border-right-style / border-left-style = Pour décorer une bordure précise.
+border-color = La couleur de la bordure.
+border-bottom-color / border-top-color / border-right-color / border-left-color = Pour colorer une bordure précise.
+border-radius = Les angles des bordures plus ou moins arrondis.
+border-top-left-radius / border-top-right-radius / border-bottom-left-radius / border-bottom-right-radius = Les angles arrondis d'un angle précis.
+box-shadow = Ajouter des ombres a une boite.
+float = Faire flotter d'un coté.
+clear = Souvent utilisé avec both comme paramètre, il permet de remettre bien après un float.
+display = Permet de modifier la façon dont un élément de va s'afficher dans la page.
+position = Permet aussi d'aligner des éléments.
+background-color = Permet de changer la couleur du fond du site.
+background-image url(image.jpg) = Permet de changer le background du site.
+background-repeat = Permet de repeter le background
+background-position x y = Permet de changer la position du background
+background-attachement = Permet de faire défiler/fixer le background
+
+*/
+
+/* Pour font-style il y a normal, italic, oblique et inherit qui permet d'hériter de la valeur parent. */
+/* Pour font-weight il y a normal, bold, bolder, lighter, inherit*/
+/* Pour text-align il y a left, right, center, justify et inherit*/
+/* Pour text-decoration il y a  underline, overline (Souligner mais en haut), line-through (Barré), blink, inherit et none */
+/* Pour text-transform il y a uppercase (FULL MAJ), capitalize (Première lettre de chaque mots en MAJ), lowercase (Full minusucule), none et inherit*/
+/* Pour text-shadow : déplacement orizental, déplacement vertical, propagation de l'ombre, couleur de l'ombre*/
+/* Pour border-style il y a solid (Trait Ferme), dotted (Petit points), dashed (Points plus grand et plus écartes), double (Double Bordure), groove, ridge, inset et outset (Avec effets 3D et plus ou moins d'ombres.)*/
+/* Pour box-shadow : déplacement orizental, déplacement vertical, propagation de l'ombre, couleur de l'ombre*/
+/* Pour border-style il y a solid (Trait Ferme), dotted (Petit points), dashed (Points plus grand et plus écartes), double (Double Bordure), groove, ridge, inset et outset (Avec effets 3D et plus ou moins d'ombres.)*/
+/* Pour display il y a inline, inline-block, */
+/* Pour position il y a fixed (Le texte suivra toujours le scroll), absolute et relative qui permet de changer de place un element*/
+/* Pour background-repeat il y a repeat, no-repeat, repeat-x (Repeter horizentalement), repeat-y (Repeter verticlament)*/
+/* Pour background-attachement il y a fixed et scroll*/
+/* Float, Display et position marchent avec le potionnement top, left, right, bottom en px pour modifier l'endoir d'ou est le texte.*/
+
+/* Shot Hand connus: 
+    font: font-style font-weight font-size/line-height font family
+    border: border-width border-style border color
+    margin: margin-top margin-right margin-bottom margin-left
+    background: background-color background-image background-repeat background-attachment background-position
+*/
+
+body{
+    font-family: Verdana, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    text-align: center;
+    color: gold;
+    font-style: italic;
+    letter-spacing: 5px;
+    text-decoration: underline;
+    text-shadow: 3px 2px 4px black;
+    height: 60px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+}
+
+.p_1{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 45px;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: none;
+    word-spacing: 2px;
+}
+
+.good{
+    border-width: 4px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    margin: 60px;
+}

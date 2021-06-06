@@ -1,0 +1,81 @@
+/* Le CSS est composé de trois chose:
+Le selecteur, les propriétés et les valeurs.
+Par exemple:
+
+p{
+    color:blue;
+    font-size: 16px;
+}
+
+p = sélécteur
+color et font-size = la propriété
+blue et 16px = la valeur
+
+    Selecteurs avancés:
+
+    Il est possible de séléctionner tout les éléments avec: "*"
+
+    Pour appliquer le meme style a plusieurs éléments:
+
+    A, B {
+        color: red;
+    }
+
+    Séléctionner un élément B contenu dans A: 
+
+    A B {
+        color: red;
+    }
+
+    Séléctionner le premier élément B suivant un élément A: 
+    
+    A + B {
+        color: red;
+    }
+
+    Séléctionner tout les éléments C possédant un attribut:
+
+    C[attribut] {
+        color: red;
+    }
+
+    Séléctionner tout les éléments D possédant un attribut en particulier et une valeur exactement:
+
+    D[attribut="valeur"] {
+        color: red;
+    }
+
+    Séléctionner tous les éléments E possédant un attribut en particulier et une valeur:
+
+    E[attribut*="valeur"] {
+        color: red;
+    }
+*/
+
+h1 {
+    color:gray
+}
+
+p {
+    color: black;
+}
+
+/* Le point provient de la classe définie dans le doc HTML */
+
+.text {
+    color: rgba(240, 108, 21, 0.199);
+}
+
+/* Le # provient de l'Id définie dans le doc HTML */
+
+#text2 {
+    color: brown;
+}
+
+.list {
+    color: indigo;
+}
+
+.site {
+    color: magenta;
+}

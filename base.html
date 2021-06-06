@@ -1,0 +1,194 @@
+<!-- Elements, balises, attributs:
+
+L'élement p définit un paragraphe,
+L'élement h1,h2,h3,h4,h5,h6 définit un titre.
+L'élement a définit un lien. 
+
+Les balises sont ouvrantes/fermantes:
+    <p> Ouvrir
+    </p> Fermer 
+Exeption: 
+Balises orphelines:
+    <br/> Qui n'a qu'une balise. 
+
+Attributs:
+
+- Propriété utilisé pour donner des indications supplémentaires aux éléments.
+Exemple: Indiquer la cible d'un lien -->
+
+<!-- <a href="https://www.youtube.com">YouTube</a> -->
+
+<!-- ici, href est égal a l'attribut, et le tout a l'élement a.
+    Les attributs toujours dans la balise ouvrante. -->
+
+<!-- La Structure minimale d'une page HTML
+
+Doctype: <!DOCTYPE html> 
+
+    Elements:
+- html,
+- head,
+- title
+- meta
+- body -->
+
+<!--
+    strong = important pour le site
+    em = important mais moins que strong
+    mark = surligner
+-->
+
+<!--Les listes "non ordonnées":
+        <ul>
+            <li>Fraise</li>
+            <li>Melon</li>
+            <li>Pomme</li>
+        </ul>
+-->  
+
+<!--Les listes "ordonnées":
+        <ol>
+            <li>Intro</li>
+            <li>Qui sommes nous</li>
+            <li>A Propos</li>
+        </ol>
+-->  
+
+<!--Les listes de "définition":
+        <dl>
+            <dt>HTML</dt>
+            <dd>HTML = Hypertext Markup Language</dd>
+        </dl>
+-->  
+
+<!--Les listes imbriqués:
+        <ol>
+            <li>Intro
+                <ul>
+                    <li>Coucou</li>
+                    <li>C'est</li>
+                    <li>Gabin</li>
+                </ul>
+            </li>
+            <li>Qui sommes nous</li>
+            <li>A Propos</li>
+        </ol>
+-->  
+
+
+<!--Les liens internes:
+
+- Même dossier : href = "page2.html"
+- Sous-Dossier : href = "sous_dossier/page2.html"
+- Dossier parent : href = "../page2.html"
+
+    Les liens externes:
+
+La valeur de href est le lien du site. 
+Exemple: href = "www.google.com"
+Exemple 2: <a href="https://developer.mozilla.org/fr/docs/Web/HTML">HTML</a>
+
+Pour ouvrir le lien dans une nouvelle fenetre, on utilise l'attribut target et sa valeur "_blank"
+Exemple: <a href="https://developer.mozilla.org/fr/docs/Web/HTML target = "_blank">HTML</a>
+
+
+    Les liens ancres:
+
+    Ils permettent d'aller a un endroit précis du site sans pour autant changer de fichier.
+
+    Comment l'utiliser ?
+
+    <p>Pour aller a Hey direct <a href="#ancre1"cliquez ici</a></p>
+        Ne pas oublier le # devant la valeur.
+    <p id="ancre1">Hey</p>
+
+    Les liens mails:
+
+    Ils permettent d'envoyer un mail.
+
+    Comment l'uiliser ?
+
+    <p>Envoyez un <a href="mailto:gabin.schiro@gmail.com">mail</a></p>
+
+    Les liens pour télécharger un fichier:
+
+    <p> <a href="base.rar">Télécharger le code source</a> </p>
+
+
+    Lier un fichier CSS a l'HTML:
+        <link rel="stylesheet" href="base.css"/>
+
+    Class:
+        <p class="text">Ceci est mon site. <br/>Vous kiffez ? (:</p>
+        Pour pouvoir utiliser .text en CSS
+    Id:
+        <p id="text2">Ceci est un paragraphe Important</p>
+        Pour pouvoir utiliser .text2 en CSS     
+        
+    On peut utiliser la meme class/id pour plusieurs balises:
+
+    <p class="coucou">Salut</p>
+    <p class="coucou">Comment vas-tu?</p> 
+
+    Une Id précise ne doit que etre utilisé qu'un seule fois par page.
+    Une Class peut etre utilisée plusieurs fois.
+
+
+    Type block = Commencent sur une autre ligne,
+    Occupent toute la largeur possible,
+    Peuvent etre imbriqués les unes dans les autres et peuvent contenir des éléments de type inline.
+    Par exemple: p / h1,h2,h3 / header, article, footer / ol, ul, dl / table
+
+
+    Type inline = Ne commencent pas sur une nouvelle ligne,
+    Occupent seulement la largeur nécessaire,
+    Peuvent contenir d'autres éléments de type inline mais pas block.
+    Par exemple: em / strong / mark / a / img
+
+    Div utilité
+    De faire un conteneur pour le CSS
+
+    Span utilité
+    De faire un conteneur avec un ou plusieurs mots d'une seule et unique ligne.
+    
+
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gabin WebSite</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="base.css"/>
+    </head>
+    <body>
+        <!-- Body = Partie Principale du Site-->
+        <h1>Gabin WebSite</h1>
+
+        <p class="text">Ceci est mon <span class="site">site</span> . <br/>Vous kiffez ? (:</p>
+        <p id="text2">Ceci <em>est</em> un <mark>paragraphe</mark> <strong>Important</strong></p>
+
+        <div class="list">
+            <ul>
+                <li>Fraise</li>
+                <li>Melon</li>
+                <li>Pomme</li>
+            </ul>
+
+            <ol>
+                <li>Intro</li>
+                <li>Qui sommes nous</li>
+                <li>A Propos</li>
+            </ol>
+
+            <dl>
+                <dt>HTML</dt>
+                <dd><a href="https://developer.mozilla.org/fr/docs/Web/HTML" target = "_blank">HTML</a> = Hypertext Markup Language</dd>
+            </dl>
+        </div>
+        
+        <p>Envoyez un <a href="mailto:gabin.schiro@gmail.com">mail</a></p>
+
+        <p> <a href="base.rar">Télécharger le code source</a> </p>
+    </body>
+</html>
